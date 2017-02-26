@@ -87,7 +87,7 @@ namespace OrangeBricks.Web.Controllers.Property
         {
             var handler = new MakeOfferCommandHandler(_context);
 
-            handler.Handle(command);
+            handler.Handle(command, User.Identity.GetUserId());
 
             return RedirectToAction("Index");
         }
