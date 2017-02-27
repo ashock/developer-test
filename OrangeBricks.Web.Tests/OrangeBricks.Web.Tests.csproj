@@ -42,7 +42,9 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -100,8 +102,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\Property\Builders\PropertiesViewModelBuilderTest.cs" />
+    <Compile Include="Controllers\Property\Commands\BookViewingCommandHandlerTest.cs" />
     <Compile Include="Controllers\Property\Commands\CreatePropertyCommandHandlerTest.cs" />
     <Compile Include="Controllers\Property\Commands\ListPropertyCommandHandlerTest.cs" />
+    <Compile Include="Controllers\TestExtentionMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
